@@ -301,6 +301,14 @@ layout: default
         {% endif %}
 
         <!-- Publications -->
+          <a class="anchor" id="publications"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Publications</h3>
+
+      {% bibliography --template=bib-cv.liquid %}
+
+      </div>
+
         {% if site.data.resume.publications.size > 0 %}
           <a class="anchor" id="publications"></a>
           <div class="card mt-3 p-3">

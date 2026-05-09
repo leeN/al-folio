@@ -1,115 +1,375 @@
----
----
+@String{AAAI        = {Proc. of the National Conference on Artificial Intelligence ({AAAI})}}
+@String{ACC         = {Proc. of the American Control Conference ({ACC})}}
+@String{ACL         = {Proc. of the Annual Meeting of the Association for Computational Linguistics ({ACL})}}
+@String{ACMTISSEC   = {{ACM} Transactions on Information Systems Security}}
+@String{ACPR        = {Proc. of the {IAPR} Asian Conference on Pattern Recognition ({ACPR})}}
+@String{ACSAC       = {Proc. of the Annual Computer Security Applications Conference ({ACSAC})}}
+@String{AIES        = {Proc. of the {AAAI/ACM} Conference on AI, Ethics, and Society ({AIES})}}
+@String{AISEC       = {Proc. of the {ACM} Workshop on Artificial Intelligence and Security ({AISEC})}}
+@String{AISTATS     = {Proc. of the International Conference on Artificial Intelligence and Statistics ({AISTATS})}}
+@String{ARES        = {Proc. of the International Conference on Availability, Reliability and Security ({ARES})}}
+@String{ASE         = {Proc. of the International Conference on Automated Software Engineering ({ASE})}}
+@String{ASIACCS     = {Proc. of the {ACM} Asia Conference on Computer and Communications Security ({ASIA CCS})}}
+@String{ASIACCS_OLD = {Proc. of the {ACM} Symposium on Information, Computer and Communications Security ({ASIACCS})}}
+@String{ASPLOS      = {Proc. of the International Conference on Architectural Support for Programming Languages and Operating Systems ({ASPLOS})}}
+@String{ATC         = {Proc. of the USENIX Annual Technical Conference ({ATC})}}
+@String{AUTOML      = {Proc. of the International Conference on Automated Machine Learning ({AutoML})}}
+@String{BAR         = {Proc. of the Workshop on Binary Analysis Research ({BAR})}}
+@String{BHAD        = {Proc. of Black Hat Abu Dhabi}}
+@String{BHEU        = {Proc. of Black Hat Europe}}
+@String{BHUSA       = {Proc. of Black Hat USA}}
+@String{BIGDATA     = {Proc. of the {IEEE} International Conference on Big Data}}
+@String{CACM        = {Communications of the {ACM}}}
+@String{CCDC        = {Proc. of the {IEEE} Chinese Control and Decision Conference ({CCDC})}}
+@String{CCS         = {Proc. of the {ACM} Conference on Computer and Communications Security ({CCS})}}
+@String{CDC         = {Proc. of the {IEEE} Conference on Decision and Control ({CDC})}}
+@String{CGO         = {Proc. of the International Symposium on Code Generation and Optimization ({CGO})}}
+@String{CHI         = {Proc. of the Conference on Human Factors in Computing Systems ({{CHI}})}}
+@String{CHIEXT      = {Extended Abstracts of Conference on Human Factors in Computing Systems ({{CHI}})}}
+@String{CIKM        = {Proc. of {ACM} International Conference on Information and Knowledge Management ({CIKM})}}
+@String{CODASPY     = {Proc. of the {ACM} Conference on Data and Application Security and Privacy ({CODASPY})}}
+@String{CRITIS      = {Proc. of the Critical Information Infrastructures Security {CRITIS}}}
+@String{CSUR        = {{ACM} Computing Surveys ({CSUR})}}
+@String{CVPR        = {Proc. of the {IEEE} Conference on Computer Vision and Pattern Recognition {(CVPR)}}}
+@String{CVPRW       = {Proc. of the {IEEE} Conference on Computer Vision and Pattern Recognition Workshops {(CVPRW)}}}
+@String{DIMVA       = {Proc. of the Conference on Detection of Intrusions and Malware {\&} Vulnerability Assessment ({DIMVA})}}
+@String{DISCEX      = {Proc. of the {DARPA} Information Survivability Conference and Exposition ({DISCEX})}}
+@String{DSN         = {Proc. of the Conference on Dependable Systems and Networks ({DSN})}}
+@String{DSSAA       = {Proc. of the {IEEE} International Conference on Data Science and Advanced Analytics ({DSAA})}}
+@String{EC2ND       = {Proc. of the European Conference on Computer Network Defense ({EC2ND})}}
+@String{ECAI        = {Proc. of the European Conference on Artificial Intelligence ({ECAI})}}
+@String{ECCV        = {Proc. of the European Conference on Computer Vision ({ECCV})}}
+@String{ECMLPKDD    = {Proc. of the European Conference on Machine Learning and Knowledge Discovery in Databases ({ECML/PKDD})}}
+@String{ECMLPKDdW   = {Proc. of the European Conference on Machine Learning and Knowledge Discovery in Databases ({ECML/PKDD} Workshops)}}
+@String{EICAR       = {Proc. of the Annual Conference of the European Institute for Computer Antivirus Research ({EICAR})}}
+@String{EMNLP       = {Proc. of the Conference on Empirical Methods in Natural Language Processing ({EMNLP})}}
+@String{EMSOFT      = {Proc. of the {ACM} International Conference on Embedded Software ({EMSOFT})}}
+@String{ESORICS     = {Proc. of the European Symposium on Research in Computer Security ({ESORICS})}}
+@String{EUROSEC     = {Proc. of the European Workshop on System Security ({EUROSEC})}}
+@String{EUROSP      = {Proc. of the {IEEE} European Symposium on Security and Privacy ({EuroS\&P})}}
+@String{EUROSPW      = {IEEE European Symposium on Security and Privacy Workshops (EuroS\&PW)}}
+@String{eusipco     = {Proc. of the European Signal Processing Conference ({EUSIPCO})}}
+@String{FACCT       = {Proc. of the {ACM} Conference on Fairness, Accountability, and Transparency ({FAccT})}}
+@String{FAT         = {Proc. of the {ACM} Conference on Fairness, Accountability, and Transparency ({FAT*})}}
+@String{FC          = {Proc. of the International Conference on Financial Cryptography and Data Security}}
+@String{FC_OLD      = {Proc. of the International Conference on Financial Cryptography}}
+@String{FSE         = {Proc. of the {ACM SIGSOFT} Symposium on the Foundations of Software Engineering}}
+@String{HICONS      = {Proc. of the {ACM} International Conference on High Confidence Networked Systems ({HiCoNS})}}
+@String{HITBGSEC    = {Proc. of Hack in the Box GSEC}}
+@String{HITBSECCONF = {Proc. of the Hack in the Box Security Conference}}
+@String{IASTED_SE   = {Proc. of the Conference on {IASTED} International Multi-Conference: Software Engineering ({SE})}}
+@String{ICANN       = {Proc. of the International Conference on Artificial Neural Networks ({ICANN})}}
+@String{ICCV        = {Proc. of the {IEEE/CVF} International Conference on Computer Vision ({ICCV})}}
+@String{ICCVW       = {Proc. of the {IEEE/CVF} International Conference on Computer Vision ({ICCV}) Workshops}}
+@String{ICDM        = {Proc. of the International Conference on Data Mining ({ICDM})}}
+@String{ICDMW       = {Proc. of the International Conference on Data Mining Workshops ({ICDM} Workshops)}}
+@String{ICICS       = {Proc. of the International Conference on Information and Communications Security ({ICICS})}}
+@String{ICIP        = {Proc. of the {IEEE} International Conference on Image Processing ({ICIP})}}
+@String{ICIS        = {Proc. of the International Conference on Information Systems ({ICIS})}}
+@String{ICLR        = {Proc. of the International Conference on Learning Representations ({ICLR})}}
+@String{ICLRPOSTER  = {Proc. of the International Conference on Learning Representations ({ICLR}) Poster Track Proceedings}}
+@String{ICLRW       = {Proc. of the International Conference on Learning Representations ({ICLR}) Workshop Track Proceedings}}
+@String{ICML        = {Proc. of the International Conference on Machine Learning ({ICML})}}
+@String{ICNP        = {Proc. of the {IEEE} International Conference on Network Protocols ({ICNP})}}
+@String{ICPR        = {Proc. of the International Conference on Pattern Recognition}}
+@String{ICSE        = {Proc. of the International Conference on Software Engineering ({ICSE})}}
+@String{IEEESB      = {Proc. of the {IEEE} Security and Privacy on the Blockchain Workshop}}
+@String{IEEESP      = {Proc. of the {IEEE} Symposium on Security and Privacy ({S\&P})}}
+@String{IEEESPW     = {Proc. of the {IEEE} Symposium on Security and Privacy Workshops}}
+@String{IJCAI       = {Proc. of the International Joint Conference on Artificial Intelligence ({IJCAI})}}
+@String{IJCAIXAI    = {Proc. of the {IJCAI} Workshop of explainable AI ({XAI})}}
+@String{IJCNN       = {Proc. of the International Joint Conference on Neural Networks ({IJCNN})}}
+@STRING{PETS="Privacy Enhancing Technologies Symposium (PETS)"}
+@STRING{IEEEACCESS="IEEE Access"}
+@STRING{JPAMC="Pervasive and Mobile Computing"}
+@STRING{PNAS="Psychological and Cognitive Science"}
+@STRING{IHSC="Informatics for Health and Social Care"}
+@STRING{TSE="IEEE Transactions on Software Engineering"}
+@STRING{TMC="IEEE Transactions on Mobile Computing"}
+@STRING{WiSec="Proc. of the {ACM} {Conference} on {Security} and {Privacy} in {Wireless} and {Mobile} {Networks}"}
+@STRING{ISSTA="Proc. of the {ACM} {SIGSOFT} {International} {Symposium} on {Software} {Testing} and {Analysis} ({ISSTA})"}
+@STRING{SANER="{IEEE} {International} {Conference} on {Software} {Analysis}, {Evolution} and {Reengineering}"}
+@STRING{USENIXSEC="{USENIX} {Security} {Symposium}"}
+@STRING{NDSS="{{Network} and {Distributed} {System} {Security} {Symposium} (NDSS)}"}
+@STRING{IMCM="The {ACM} international conference on {Measurement} and modeling of computer systems"}
+@STRING{CONPRO="The Workshop on Technology and Consumer Protection"}
+@STRING{SOUPS="USENIX Symposium on Usable Privacy and Security"}
+@STRING{USEC="The Symposium on Usable Security and Privacy"}
+@STRING{WEBSCI="Proc. of the ACM Conference on Web Science"}
+@STRING{IMWUT="Proc. of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies"}
+@STRING{ICMSR="International Conference on Mining Software Repositories"}
+@STRING{PST="Annual Conference on Privacy, Security and Trust"}
+@STRING{SAC="ACM Symposium on Applied Computing (SAC)"}
+@STRING{IMC="{Internet Measurement Conference (IMC)}"}
+@STRING{RAID="{International Symposium on Research in Attacks, Intrusions and Defenses (RAID)}"}
+@STRING{WWW="{The Web Conference}"}
+@STRING{MADWEB="{Workshop on Measurements, Attacks, and Defenses for the Web (MADWeb)}"}
+@STRING{KDD="{I}nternational {Conference} on {Knowledge} {Discovery} and {Data} {Mining}"}
+@STRING{PAM="{Passive and Active Network Measurement Conference ({PAM})}"}
+@STRING{WOOT="{WOOT Conference on Offensive Technologies}"}
+@STRING{TOPS="{ACM Transactions on Privacy and Security (TOPS)}"}
+@STRING{SIGSCE="{Proc. of the {ACM} Technical Symposium on Computer Science Education}"}
+@STRING{PLAS="{Proc. of the {ACM} {SIGSAC} Workshop on Programming Languages and Analysis for Security}"}
+@STRING{OOPSLA="{ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages and Applications}"}
+@STRING{METACRISP="{Workshop on Metascience and Critical Reflections in Security \& Privacy (MetaCRISP)}"} 
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
-
-@book{einstein1956investigations,
+@inproceedings{KleRolBarKar+23,
+  abbr = {CCS},
+  title         = {{General Data Protection Runtime: Enforcing Transparent GDPR Compliance for Existing Applications}},
+  author        = {Klein, David AND Rolle, Benny AND Barber, Thomas AND Karl, Manuel AND  Johns, Martin},
+  booktitle     = CCS,
+  year          = 2023,
+  month         = 11,
+  doi           = {10.1145/3576915.3616604},
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
   selected          = {true},
-  inspirehep_id     = {3255}
 }
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@inproceedings{KleBarBen+22,
+  abbr = {EUROS&P},
+  author        = {Klein, David and Barber, Thomas and Bensalim, Souphiane and Stock, Ben and  Johns, Martin},
+  title         = {{Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions}},
+  booktitle     = EUROSP,
+  year          = 2022,
+  month         = 6,
+  doi           = {10.1109/EuroSP53844.2022.00023},
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  selected          = {true},
+
 }
 
-@book{przibram1967letters,
+@inproceedings{KleJoh24,
+  abbr = {S&P},
+  author        = {Klein, David and  Johns, Martin},
+  booktitle     = IEEESP,
+  title         = {Parse Me, Baby, One More Time: Bypassing HTML Sanitizer via Parsing Differentials},
+  year          = 2024,
+  month         = 5,
+  doi           = {10.1109/SP54263.2024.00092},
+  selected          = {true},
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+
+}
+
+@inproceedings{HorHonKleSer+25,
+  abbr = {S&P},
+  title         = {{``Sorry for bugging you so much.'' Exploring Developers' Behavior Towards Privacy-Compliant Implementation}},
+  author        = {Horstmann, Stefan Albert and Hong, Sandy and Klein, David AND Raphael Serafini, Raphael and Degeling, Martin  and Johns, Martin and  Moonsamy, Veelasha and Naiakshina, Alena},
+  booktitle     = IEEESP,
+  year          = 2025,
+  month         = 5,
+  doi           = {10.1109/SP61157.2025.00146},
+  bibtex_show = {true},
+
+  selected          = {true},
+}
+
+@inproceedings{KleMusBarKop+22,
+  abbr = {ACSAC},
+  title         = {{Accept All Exploits: Exploring the Security Impact of Cookie Banners.}},
+  author        = {Klein, David AND Musch, Marius AND Barber, Thomas AND Kopmann, Moritz AND Johns, Martin},
+  booktitle     = ACSAC,
+  year          = 2022,
+  month         = 12,
+  doi           = {10.1145/3564625.3564647},
+  bibtex_show = {true},
+
+  selected          = {true},
+}
+
+@inproceedings{KirMoeMusKle+24,
+  abbr = {USENIX},
+  author        = {Kirchner, Robin and  M{\"o}ller, Jonas and Musch, Marius and Klein, David  and Rieck, Konrad and  Johns, Martin},
+  booktitle     = USENIXSEC,
+  title         = {{Dancer in the Dark: Synthesizing and Evaluating Polyglots for Blind Cross-Site Scripting}},
+  year          = 2024,
+  month         = 8,
+  award_name  = {Distinguished Paper Award},
+  award       = {},
+  bibtex_show = {true},
+  selected          = {true},
+
+}
+
+@inproceedings{QuiKleArpJoh+20,
+  abbr = {USENIX},
+  title         = {{Adversarial Preprocessing: Understanding and Preventing Image-Scaling Attacks in Machine Learning.}},
+  author        = { Quiring, Erwin AND  Klein, David AND  Arp, Daniel AND Johns, Martin  AND  Rieck, Konrad},
+  booktitle     = USENIXSEC,
+  year          = 2020,
+  tnid          = 1886248773,
+  month = 8,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{DirKleMicSte+21,
+  abbr = {PETS},
+  title         = {{LogPicker: Strengthening Certificate Transparency Against Covert Adversaries}},
+  author        = { Dirksen, Alexandra and Klein, David and  Michael, Robert and  Stehr, Tilman and  Rieck, Konrad and  Johns, Martin},
+  booktitle     = PETS,
+  volume        = 4,
+  year          = 2021,
+  doi           = {10.2478/popets-2021-0066},
+  month = 7,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{BenKleBarJoh+21,
+  author        = { Bensalim, Souphiane and Klein, David and  Barber, Thomas and  Johns, Martin},
+  title         = {{Talking About My Generation: Targeted DOM-Based XSS Exploit Generation Using Dynamic Data Flow Analysis}},
+  year          = 2021,
+  doi           = {10.1145/3447852.3458718},
+  booktitle     = EUROSEC,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{KocKleJoh24,
+  title         = {{The Fault in Our Stars: An Analysis of GitHub Stars as an Importance Metric for Web Source Code}},
+  author        = { Koch, Simon AND Klein, David AND Johns, Martin},
+  booktitle     = MADWEB,
+  month         = mar,
+  year         = 2024,
+  doi           = {10.14722/madweb.2024.23004},
+  award_name         = {Best Presentation Award},
+  award       = {},
+  bibtex_show = {true},
+
+}
+
+@inproceedings{KirKocKleKam+24,
+  abbr = {PETS},
+  title         = {{A Black-Box Privacy Analysis of Messaging Service Providers' Chat Message Processing}},
+  author        = {Kirchner, Robin AND  Koch, Simon AND  Kamangar, Noah AND Klein, David AND Johns, Martin},
+  booktitle     = PETS,
+  year          = 2024,
+  doi           = {10.56553/popets-2024-0099},
+  month = 7,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{BouHocBerRum+24,
+  abbr = {PETS},
+  title         = {{FP-tracer: Fine-grained Browser Fingerprinting Detection via Taint-tracking and Multi-level Entropy-based Thresholds}},
+  author        = {Boussaha, Soumaya AND  Hock, Lukas AND  Bermejo, Miguel AND  Cuevas Rumin, Ruben AND  Cuevas Rumin, Angel AND Klein, David AND  Johns, Martin AND Compagna, Luca AND  Antonioli, Daniele AND Barber, Thomas},
+  booktitle     = PETS,
+  year          = 2024,
+  doi           = {10.56553/popets-2024-0092},
+  month = 7,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{DraCloKle+25,
+  author        = {Draissi, Oussama and Cloosters, Tobias and Klein, David and Rodler, Michael and Musch, Marius and Johns, Martin and Davi, Lucas},
+  title         = {{Wemby's Web: Hunting for Memory Corruption in WebAssembly}},
+  booktitle     = ISSTA,
+  month = 6,
+  year          = 2025,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{WesKocBetKle+25,
+  abbr = {USENIX},
+  title         = {{HyTrack: Resurrectable and Persistent Tracking Identifiers Across Android Apps and the Web}},
+  booktitle     = USENIXSEC,
+  author        = { Wessels, Malte AND  Koch, Simon AND Drescher, Jan AND  Bettels, Louis AND  Klein, David AND Johns, Martin},
+  month = 8,
+  year          = 2025,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{KarBetJohKle25,
+  author        = {Karl, Manuel AND Bettels, Louis AND Johns, Martin AND  Klein, David},
+  title         = {{Comma Separated Vulnerabilities: Detecting Formula Injection in the Wild}},
+  booktitle     = WOOT,
+  month = 8,
+  year          = 2025,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{SchKocKliKle+25,
+  abbr = {USENIX},
+  title         = {{Confusing Value with Enumeration: Studying the Use of CVEs in Academia}},
+  author        = { Schloegel, Moritz AND  Klischies, Daniel AND  Koch, Simon AND   Klein, David AND  Gerlach, Lukas AND  Wessels, Malte AND  Trampert, Leon AND  Johns, Martin AND  Vanhoef, Mathy AND  Schwarz, Michael AND  Holz, Thorsten AND  Van Bulck, Jo},
+  booktitle     = USENIXSEC,
+  year          = 2025,
+  month = 8,
+  award_name  = {Distinguished Paper Award},
+  award       = {},
+  bibtex_show = {true},
+  selected          = {true},
+
+}
+
+@inproceedings{KalKleJohMoo25,
+  abbr = {PETS},
+  title         = {{Making Web Applications GDPR Compliant: A Comparative Evaluation of GDPR-Enforcement Frameworks}},
+  author        = {Kalinowski, Felix AND  Klein, David AND  Johns, Martin AND  Moonsamy, Veelasha},
+  doi           = {10.56553/popets-2025-0157},
+  booktitle     = PETS,
+  year          = 2025,
+  month = 7,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{DreMirKhoKle+25,
+  abbr = {CCS},
+  author        = {Drescher, Jan AND  Mirzaei, Sepehr AND  Khodayari, Soheil AND Klein, David AND  Barber, Thomas AND Johns, Martin AND  Pellegrino, Giancarlo},
+  title         = {{In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web}},
+  booktitle     = CCS,
+  doi           = {10.1145/3719027.3765117},
+  year          = 2025,
+  month = 11,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{DreKleJoh26,
+  abbr = {NDSS},
+  author        = {Drescher, Jan AND Klein, David AND Johns, Martin},
+  title         = {{Are your Sites Truly Isolated? Automatically Detecting Logic Bugs in Site Isolation Implementations}},
+  booktitle     = NDSS,
+  doi = {10.14722/ndss.2026.24},
+  year          = 2026,
+  month = 3,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{KarKocKleJoh25,
+  abbr = {ACSAC},
+  author        = {Karl, Manuel AND Koch, Simon AND Klein, David AND Johns, Martin},
+  title         = {{Uncovering Bigger Truths: Deobfuscating PHP with Phoebe}},
+  booktitle     = ACSAC,
+  year          = 2025,
+  month = 12,
+  bibtex_show = {true},
+
+}
+
+@inproceedings{HeiGiesKleDir26,
+  author = {Heinrich, Tiago AND Giessler, Sebastian AND Klein, David AND Dirksen, Alexandra},
+  title = {{FAIR Enough? Assessing Open Science Practices on a Top-Tier Security \& Privacy Conferences}},
+  booktitle = METACRISP,
+  year = 2026,
+  month             = 5,
+  bibtex_show = {true},
+
+}
+@inproceedings{KocHarBoeKle26,
+  author = {Koch, Simon AND Hartung, Jannik AND  Böhme, Rainer AND Klein, David},
+  title = {{On the Mismatch of Disclosure Practices in Security and Privacy Research}},
+  booktitle = METACRISP,
+  year = 2026,
+  month             = 5,
+  bibtex_show = {true},
 }

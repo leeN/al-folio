@@ -74,6 +74,8 @@
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
+          color: var(--global-text-color);
+
 
           &:hover {
             border-bottom-style: solid;
@@ -84,6 +86,7 @@
         > em {
           border-bottom: 1px solid;
           font-style: normal;
+          color: var(--global-theme-color);
         }
 
         > span.more-authors {
