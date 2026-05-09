@@ -5,11 +5,11 @@ $(document).ready(function () {
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
   });
-  $("a.award").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
-  });
+  // $("a.award").click(function () {
+  //   $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
+  //   $(this).parent().parent().find(".award.hidden").toggleClass("open");
+  //   $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+  // });
   $("a.bibtex").click(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
