@@ -1,0 +1,15 @@
+software:
+  foxhound:
+    - name: "Project Foxhound"
+      url: https://github.com/SAP/project-foxhound
+      role: Co-Maintainer
+      description: >
+        foo bar
+        baz
+  fontus:
+    - name: "Project Fontus"
+      url: https://github.com/SAP/project-fontus
+      role: Lead-Maintainer
+      description: >
+        foo bar
+        baz

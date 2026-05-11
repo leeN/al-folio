@@ -64,6 +64,22 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Pc Memberships -->
+    {% if page.show_pcs %}
+      <h2>
+        <a href="{{ '/pcs/' | relative_url }}" style="color: inherit">PC Memberships</a>
+      </h2>
+      {% include reviewing.liquid pcs_limit=3 data=site.data.pc.pc_memberships %}
+    {% endif %}
+
+    <!-- Awards -->
+    {% if page.show_awards %}
+      <h2>
+        Awards
+      </h2>
+      {% include awards.liquid %}
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">

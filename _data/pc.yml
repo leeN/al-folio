@@ -1,0 +1,36 @@
+pc_memberships:
+    2027:
+        - venue: AsiaCCS
+          homepage: https://asiaccs2027.cityu.edu.mo/
+        - venue: NDSS
+          homepage: https://www.ndss-symposium.org/ndss2027/
+    2026:
+        - venue: Usenix
+          homepage: https://www.usenix.org/conference/usenixsecurity26
+        - venue: ACSAC
+          homepage: https://www.acsac.org/2026/
+        - venue: Euro S&P
+          homepage: https://eurosp2026.ieee-security.org/
+        - venue: DIMVA
+          homepage: https://www.dimva.org/dimva2026/
+        - venue: WORMA
+          homepage: https://worma.gitlab.io/2026/
+    2025:
+        - venue: ACSAC
+          homepage: https://www.acsac.org/2025/
+        - venue: DIMVA
+          homepage: https://www.dimva.org/dimva2025/
+        - venue: WORMA
+          homepage: https://worma.gitlab.io/2025/
+        - venue: WOOT
+          homepage: https://www.usenix.org/conference/woot25/
+    2024:
+        - venue: MADWeb
+          homepage: https://madweb.work/
+        - venue: SecWeb
+          homepage: https://secweb.work/
+        - venue: WORMA
+          homepage: https://worma.gitlab.io/2024/
+    2023:
+        - venue: WORMA
+          homepage: https://worma.gitlab.io/2023/

@@ -1,0 +1,26 @@
+<div class="awards">
+  
+  {% assign awards = site.data.awards.awards  %}
+  {% for award_pair in awards %}
+    {% assign year = award_pair[0] %}
+    {% assign entries = award_pair[1] %}
+    <h3> {{ year }}
+    <div
+      class="table-responsive"
+        style="max-height: 60vw"
+    >
+      <table class="table table-sm table-borderless">
+        {% for item in entries %}
+          <tr>
+            <td>
+                {{ item.venue }}
+            </td>
+            <td>
+                {{ item.award }}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+    {% endfor %}
+</div>

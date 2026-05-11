@@ -1,0 +1,42 @@
+subreviews:
+    2025:
+        - venue: NDSS
+        - venue: Usenix
+        - venue: ARES
+    2024:
+        - venue: CCS
+        - venue: ACSAC
+        - venue: CODASPY
+    2023:
+        - venue: S&P
+        - venue: CCS
+    2022:
+        - venue: S&P
+        - venue: WWW
+        - venue: EuroS&P
+          comment: External Reviewer
+        - venue: ACSAC
+        - venue: CODASPY
+        - venue: ARES
+    2021:
+        - venue: WWW
+        - venue: ACSAC
+        - venue: CODASPY
+        - venue: SAC
+        - venue: ARES
+    2020:
+        - venue: WWW
+        - venue: ACSAC
+        - venue: EuroS&P
+        - venue: CODASPY
+        - venue: SAC
+        - venue: ICWE
+    2019:
+        - venue: ACSAC
+        - venue: CODASPY
+        - venue: SAC
+        - venue: ICWE
+    2018:
+        - venue: ACSAC
+        - venue: CODASPY
+        - venue: SAC

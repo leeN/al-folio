@@ -1,0 +1,38 @@
+<div class="reviewing">
+  {% assign data = include.data  %}
+  {% if include.pcs_limit %}
+  {% assign show_limit = include.pcs_limit  %}
+  {% else  %}
+  {% assign show_limit = pcs.size  %}
+  {% endif  %}
+    <div
+      class="table-responsive"
+        style="max-height: 60vw"
+    >
+      <table class="table table-sm table-borderless">
+        <tr>
+          <th>Year</th>
+          <th>Venues</th>
+        </tr>
+  {% for pc_pair in data limit: show_limit %}
+    {% assign year = pc_pair[0] %}
+    {% assign entries = pc_pair[1] %}
+          <tr>
+            <td>
+                {{ year }}
+            </td>
+            <td>
+            {% for entry in entries %}
+              {% if entry.homepage %}
+                <a href="{{entry.homepage}}">{{ entry.venue }}</a>
+              {% else  %}
+                {{ entry.venue }}
+              {% endif  %}
+              {% unless forloop.last %}, {% endunless -%}
+            {% endfor %}
+            </td>
+          </tr>
+    {% endfor %}
+      </table>
+    </div>
+</div>
