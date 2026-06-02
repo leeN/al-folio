@@ -10,11 +10,25 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "nav-publications",
-          title: "publications",
+          title: "Publications",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-academic-service",
+          title: "Academic Service",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/pcs/";
+          },
+        },{id: "nav-public-speaking",
+          title: "Public Speaking",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/talks/";
           },
         },{id: "books-the-godfather",
           title: 'The Godfather',
