@@ -24,11 +24,10 @@
             <td>
             {% for entry in entries %}
               {% if entry.homepage %}
-                <a href="{{entry.homepage}}">{{ entry.venue }}</a>
+                <a href="{{entry.homepage}}">{{ entry.venue }}</a>{% unless forloop.last %}, {% endunless -%}
               {% else  %}
-                {{ entry.venue }}
+                {{entry.venue}}{% unless forloop.last %}, {% endunless -%}
               {% endif  %}
-              {% unless forloop.last %}, {% endunless -%}
             {% endfor %}
             </td>
           </tr>

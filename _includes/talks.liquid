@@ -1,0 +1,15 @@
+<div class="talks">
+  {% assign talks = include.data  %}
+  {% if include.talks_limit %}
+  {% assign talks_limit = include.talks_limit  %}
+  {% else  %}
+  {% assign talks_limit = talks.size  %}
+  {% endif  %}
+  {% for talk in talks limit: talks_limit %}
+    <p>
+      <strong>{{talk.title}}</strong> {% if talk.slides_url %}[<a href="{{talk.slides_url}}">Slides</a>]{% endif %}
+      <br/>
+    {% if talk.url %} <a href="{{talk.url}}">{{talk.venue}}</a>{% else %}{{talk.venue}}{% endif %}, {{talk.date}}, {{talk.city}}, {{talk.country}}{% if talk.with %}, with {{talk.with | join ", " }}{% endif %}
+    </p>
+    {% endfor %}
+</div>

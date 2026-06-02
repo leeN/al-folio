@@ -67,9 +67,17 @@ layout: default
     <!-- Pc Memberships -->
     {% if page.show_pcs %}
       <h2>
-        <a href="{{ '/pcs/' | relative_url }}" style="color: inherit">PC Memberships</a>
+        <a href="{{ '/pcs/' | relative_url }}" style="color: inherit">Recent PC Memberships</a>
       </h2>
       {% include reviewing.liquid pcs_limit=3 data=site.data.pc.pc_memberships %}
+    {% endif %}
+
+    <!-- Public Speaking -->
+    {% if page.show_talks %}
+      <h2>
+        <a href="{{ '/talks/' | relative_url }}" style="color: inherit">Recent Talks</a>
+      </h2>
+      {% include talks.liquid talks_limit=3 data=site.data.talks.talks %}
     {% endif %}
 
     <!-- Awards -->

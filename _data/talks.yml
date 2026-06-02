@@ -1,0 +1,51 @@
+talks:
+  - venue: BlackHat EU Arsenal
+    title: Project Foxhound
+    url:
+    with:
+      - Thomas Barber
+    date:
+    city: London
+    country: United Kingdom
+    slides_url: 
+  - venue: RuhrSec
+    title: "Parse Me, Baby, One More Time: Bypassing HTML Sanitizer via Parsing Differentials"
+    date: 20.-21.02.2025
+    city: Bochum
+    country: Germany
+  - venue: BlackHat EU
+    title: "Parse Me, Baby, One More Time: Bypassing HTML Sanitizer via Parsing Differentials"
+    url: https://www.blackhat.com/eu-24/briefings/schedule/index.html#parse-me-baby-one-more-time-bypassing-html-sanitizer-via-parsing-differentials-42514
+    date: 09.-12.12.2024
+    city: London
+    country: United Kingdom
+    slides_url: 
+  - venue: German OWASP Day
+    title: "Exploring Synergies Between Privacy and Security Enhancing Technologies"
+    date: 30.-31.5.2023
+    city: Frankfurt am Main
+    country: Germany
+    url: https://god.owasp.de/2023/
+    slides_url: https://www.ias.cs.tu-bs.de/documents/david_klein_god23.pdf
+  - venue: RuhrSec
+    title: "Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions"
+    date: 11.-12.5.2023
+    city: Bochum
+    country: Germany
+    url: https://www.ruhrsec.de/2023/
+    slides_url: https://www.ias.cs.tu-bs.de/documents/ruhrsec23_hand_sanitizer.pdf
+  - venue: IT-Defense
+    title: "3rd-Party JavaScript, das unbekannte Wesen"
+    date: 8.-10.02.2023
+    city: Mainz
+    country: Germany
+    url: https://www.it-defense.de/it-defense-2023
+    with:
+      - Martin Johns
+  - venue: OWASP Global AppSec
+    title: "Hand Sanitizers in the Wild: A Large-scale Study of Custom JavaScript Sanitizer Functions"
+    date: 17.11.2022
+    city: San Francisco
+    country: USA
+    url: https://owasp2022globalappsecsf.sched.com/event/1BS4X/hand-sanitizers-in-the-wild-a-large-scale-study-of-custom-javascript-sanitizer-functions
+    slides_url: https://www.ias.cs.tu-bs.de/documents/hand_sanitizer_global_appsec22.pdf
